@@ -10,7 +10,7 @@ The dataframe summary shows that in Urban cities, the average fare per ride is $
 ![PyBer_fare-summary](PyBer_fare-summary.png)
 
 ## Summary 
-### Based on the results, here are three business recommendations to the CEO for addressing any disparities among the city types.
+Based on the results, here are three business recommendations to the CEO for addressing any disparities among the city types.
 -
 -
 -
