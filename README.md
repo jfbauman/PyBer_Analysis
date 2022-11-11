@@ -5,3 +5,10 @@
 
 ## Results
 ![Summary_dataframe](Summary_dataframe.png)
+
+
+## Summary 
+(Based on the results, provide three business recommendations to the CEO for addressing any disparities among the city types.)
+-
+-
+-
