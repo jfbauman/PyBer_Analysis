@@ -8,7 +8,7 @@
 
 
 ## Summary 
-(Based on the results, provide three business recommendations to the CEO for addressing any disparities among the city types.)
+### Based on the results, here are three business recommendations to the CEO for addressing any disparities among the city types.
 -
 -
 -
