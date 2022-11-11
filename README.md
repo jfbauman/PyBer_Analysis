@@ -6,7 +6,7 @@ The purpose of the new analysis is to show the relationstip between the type of 
 ## Results
 (using images from multiple-line chart, describe the differences in ride-sharing data among the different city types.)
 The dataframe summary shows that in Urban cities, the average fare per ride is $24.53 compared to Rural cities where their average fare per ride is $34.62. 
-![Summary_dataframe](Summary_dataframe.png
+![Summary_dataframe](Summary_dataframe.png)
 ![PyBer_fare-summary](PyBer_fare-summary.png)
 
 ## Summary 
