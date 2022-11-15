@@ -2,11 +2,7 @@
  "cells": [
   {
    "cell_type": "code",
-<<<<<<< HEAD
    "execution_count": 129,
-=======
-   "execution_count": 1,
->>>>>>> 030e1ccfb03093e8c5031e24105675386b468f90
    "id": "56ff8931",
    "metadata": {},
    "outputs": []
@@ -28,11 +24,7 @@
   },
   {
    "cell_type": "code",
-<<<<<<< HEAD
    "execution_count": 130,
-=======
-   "execution_count": 4,
->>>>>>> 030e1ccfb03093e8c5031e24105675386b468f90
    "id": "eed1673f",
    "metadata": {},
    "outputs": [
@@ -131,11 +123,7 @@
        "4  Urban  "
       ]
      },
-<<<<<<< HEAD
      "execution_count": 130,
-=======
-     "execution_count": 4,
->>>>>>> 030e1ccfb03093e8c5031e24105675386b468f90
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -150,32 +138,13 @@
   },
   {
    "cell_type": "code",
-<<<<<<< HEAD
    "execution_count": 131,
    "id": "6cfdc9a4",
-=======
-   "execution_count": 7,
-   "id": "1a882e39",
-   "metadata": {},
-   "outputs": []
-   "source": [
-    "# Create the Urban, Suburban & Rural city DataFrame.\n",
-    "urban_cities_df = pyber_data_df[pyber_data_df[\"type\"] == \"Urban\"]\n",
-    "suburban_cities_df = pyber_data_df[pyber_data_df[\"type\"] == \"Suburban\"]\n",
-    "rural_cities_df = pyber_data_df[pyber_data_df[\"type\"] == \"Rural\"]"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 40,
-   "id": "6475a7a6",
->>>>>>> 030e1ccfb03093e8c5031e24105675386b468f90
    "metadata": {},
    "outputs": [
     {
      "data": {
       "text/plain": [
-<<<<<<< HEAD
        "type\n",
        "Rural        125\n",
        "Suburban     625\n",
@@ -184,103 +153,25 @@
       ]
      },
      "execution_count": 131,
-=======
-       "city\n",
-       "Amandaburgh        18\n",
-       "Barajasview        22\n",
-       "Carriemouth        27\n",
-       "Christopherfurt    27\n",
-       "Deanville          19\n",
-       "Name: ride_id, dtype: int64"
-      ]
-     },
-     "execution_count": 40,
->>>>>>> 030e1ccfb03093e8c5031e24105675386b468f90
      "metadata": {},
      "output_type": "execute_result"
     }
    ],
    "source": [
     "# 1 Get the number of rides for urban cities. 5.3.2\n",
-<<<<<<< HEAD
     "total_rides_by_type = pyber_data_df.groupby([\"type\"]).count()[\"ride_id\"]\n",
     "total_rides_by_type"
-=======
-    "urban_ride_count = urban_cities_df.groupby([\"city\"]).count()[\"ride_id\"]\n",
-    "urban_ride_count.head()"
->>>>>>> 030e1ccfb03093e8c5031e24105675386b468f90
    ]
   },
   {
    "cell_type": "code",
-<<<<<<< HEAD
    "execution_count": 132,
-=======
-   "execution_count": 14,
-   "id": "4b2ca4c7",
-   "metadata": {},
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "city\n",
-       "Barronchester    16\n",
-       "Bethanyland      18\n",
-       "Brandonfort      19\n",
-       "Colemanland      22\n",
-       "Davidfurt        17\n",
-       "Name: ride_id, dtype: int64"
-      ]
-     },
-     "execution_count": 14,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "suburban_ride_count = suburban_cities_df.groupby([\"city\"]).count()[\"ride_id\"]\n",
-    "suburban_ride_count.head()"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 15,
-   "id": "ae06672f",
-   "metadata": {},
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "city\n",
-       "Bradshawfurt      10\n",
-       "Garzaport          3\n",
-       "Harringtonfort     6\n",
-       "Jessicaport        6\n",
-       "Lake Jamie         6\n",
-       "Name: ride_id, dtype: int64"
-      ]
-     },
-     "execution_count": 15,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "rural_ride_count = rural_cities_df.groupby([\"city\"]).count()[\"ride_id\"]\n",
-    "rural_ride_count.head()"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 9,
->>>>>>> 030e1ccfb03093e8c5031e24105675386b468f90
    "id": "98dee274",
    "metadata": {},
    "outputs": [
     {
      "data": {
       "text/plain": [
-<<<<<<< HEAD
        "type\n",
        "Rural         78\n",
        "Suburban     490\n",
@@ -289,104 +180,25 @@
       ]
      },
      "execution_count": 132,
-=======
-       "city\n",
-       "Amandaburgh         216\n",
-       "Barajasview         572\n",
-       "Carriemouth        1404\n",
-       "Christopherfurt    1107\n",
-       "Deanville           931\n",
-       "Name: driver_count, dtype: int64"
-      ]
-     },
-     "execution_count": 9,
->>>>>>> 030e1ccfb03093e8c5031e24105675386b468f90
      "metadata": {},
      "output_type": "execute_result"
     }
    ],
    "source": [
-<<<<<<< HEAD
     "# 2 ** Get the total drivers for each city type\n",
     "total_drivers_by_type = city_data_df.groupby([\"type\"]).sum()[\"driver_count\"]\n",
     "total_drivers_by_type"
-=======
-    "# 2  Get the total drivers for each city type\n",
-    "urban_ride_count = urban_cities_df.groupby([\"city\"]).sum()[\"driver_count\"]\n",
-    "urban_ride_count.head()"
->>>>>>> 030e1ccfb03093e8c5031e24105675386b468f90
    ]
   },
   {
    "cell_type": "code",
-<<<<<<< HEAD
    "execution_count": 133,
-=======
-   "execution_count": 16,
-   "id": "ab38fdfb",
-   "metadata": {},
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "city\n",
-       "Barronchester    176\n",
-       "Bethanyland      396\n",
-       "Brandonfort      190\n",
-       "Colemanland      506\n",
-       "Davidfurt        391\n",
-       "Name: driver_count, dtype: int64"
-      ]
-     },
-     "execution_count": 16,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "suburban_ride_count = suburban_cities_df.groupby([\"city\"]).sum()[\"driver_count\"]\n",
-    "suburban_ride_count.head()"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 17,
-   "id": "dedb7631",
-   "metadata": {},
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "city\n",
-       "Bradshawfurt      70\n",
-       "Garzaport         21\n",
-       "Harringtonfort    24\n",
-       "Jessicaport        6\n",
-       "Lake Jamie        24\n",
-       "Name: driver_count, dtype: int64"
-      ]
-     },
-     "execution_count": 17,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "rural_ride_count = rural_cities_df.groupby([\"city\"]).sum()[\"driver_count\"]\n",
-    "rural_ride_count.head()"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 10,
->>>>>>> 030e1ccfb03093e8c5031e24105675386b468f90
    "id": "2c6d9eca",
    "metadata": {},
    "outputs": [
     {
      "data": {
       "text/plain": [
-<<<<<<< HEAD
        "type\n",
        "Rural        4327.93\n",
        "Suburban    19356.33\n",
@@ -395,48 +207,25 @@
       ]
      },
      "execution_count": 133,
-=======
-       "city\n",
-       "Amandaburgh        443.55\n",
-       "Barajasview        557.31\n",
-       "Carriemouth        764.49\n",
-       "Christopherfurt    661.55\n",
-       "Deanville          491.01\n",
-       "Name: fare, dtype: float64"
-      ]
-     },
-     "execution_count": 10,
->>>>>>> 030e1ccfb03093e8c5031e24105675386b468f90
      "metadata": {},
      "output_type": "execute_result"
     }
    ],
    "source": [
     "# 3 Get the total amount of fares for each city type\n",
-<<<<<<< HEAD
     "total_fares_by_type = pyber_data_df.groupby([\"type\"]).sum()[\"fare\"]\n",
     "total_fares_by_type"
-=======
-    "urban_ride_count = urban_cities_df.groupby([\"city\"]).sum()[\"fare\"]\n",
-    "urban_ride_count.head()"
->>>>>>> 030e1ccfb03093e8c5031e24105675386b468f90
    ]
   },
   {
    "cell_type": "code",
-<<<<<<< HEAD
    "execution_count": 134,
    "id": "50262c3c",
-=======
-   "execution_count": 18,
-   "id": "f73b582b",
->>>>>>> 030e1ccfb03093e8c5031e24105675386b468f90
    "metadata": {},
    "outputs": [
     {
      "data": {
       "text/plain": [
-<<<<<<< HEAD
        "type\n",
        "Rural       34.623440\n",
        "Suburban    30.970128\n",
@@ -445,48 +234,25 @@
       ]
      },
      "execution_count": 134,
-=======
-       "city\n",
-       "Barronchester    582.76\n",
-       "Bethanyland      593.21\n",
-       "Brandonfort      673.31\n",
-       "Colemanland      679.68\n",
-       "Davidfurt        543.93\n",
-       "Name: fare, dtype: float64"
-      ]
-     },
-     "execution_count": 18,
->>>>>>> 030e1ccfb03093e8c5031e24105675386b468f90
      "metadata": {},
      "output_type": "execute_result"
     }
    ],
    "source": [
-<<<<<<< HEAD
     "# 4 Average fare per ride by city type\n",
     "avg_fare_per_ride = pyber_data_df.groupby([\"type\"]).mean()[\"fare\"]\n",
     "avg_fare_per_ride"
-=======
-    "suburban_ride_count = suburban_cities_df.groupby([\"city\"]).sum()[\"fare\"]\n",
-    "suburban_ride_count.head()"
->>>>>>> 030e1ccfb03093e8c5031e24105675386b468f90
    ]
   },
   {
    "cell_type": "code",
-<<<<<<< HEAD
    "execution_count": 135,
    "id": "7e1e6259",
-=======
-   "execution_count": 19,
-   "id": "8d8f7948",
->>>>>>> 030e1ccfb03093e8c5031e24105675386b468f90
    "metadata": {},
    "outputs": [
     {
      "data": {
       "text/plain": [
-<<<<<<< HEAD
        "type\n",
        "Rural       55.486282\n",
        "Suburban    39.502714\n",
@@ -495,284 +261,19 @@
       ]
      },
      "execution_count": 135,
-=======
-       "city\n",
-       "Bradshawfurt      400.64\n",
-       "Garzaport          72.37\n",
-       "Harringtonfort    200.82\n",
-       "Jessicaport       216.08\n",
-       "Lake Jamie        206.15\n",
-       "Name: fare, dtype: float64"
-      ]
-     },
-     "execution_count": 19,
->>>>>>> 030e1ccfb03093e8c5031e24105675386b468f90
      "metadata": {},
      "output_type": "execute_result"
     }
    ],
    "source": [
-<<<<<<< HEAD
     "# 5. Get the average fare per driver for each city type. \n",
     "avg_fare_per_driver = total_fares_by_type / total_drivers_by_type\n",
     "avg_fare_per_driver"
-=======
-    "rural_ride_count = rural_cities_df.groupby([\"city\"]).sum()[\"fare\"]\n",
-    "rural_ride_count.head()"
->>>>>>> 030e1ccfb03093e8c5031e24105675386b468f90
    ]
   },
   {
    "cell_type": "code",
-<<<<<<< HEAD
    "execution_count": 136,
-=======
-   "execution_count": 34,
-   "id": "07745e44",
-   "metadata": {},
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "city\n",
-       "Amandaburgh        24.641667\n",
-       "Barajasview        25.332273\n",
-       "Carriemouth        28.314444\n",
-       "Christopherfurt    24.501852\n",
-       "Deanville          25.842632\n",
-       "Name: fare, dtype: float64"
-      ]
-     },
-     "execution_count": 34,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "# 4 Get the average fare per ride for each city type. \n",
-    "#type_percents = 100 * sum_fares_by_type / total_fares\n",
-    "#type_percents"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "50262c3c",
-   "metadata": {},
-   "outputs": []
-   "source": [
-    "urban_avg_fare = urban_cities_df.groupby([\"city\"]).mean()[\"fare\"]\n",
-    "urban_avg_fare.head()"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 35,
-   "id": "42ba0cb3",
-   "metadata": {},
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "city\n",
-       "Barronchester    36.422500\n",
-       "Bethanyland      32.956111\n",
-       "Brandonfort      35.437368\n",
-       "Colemanland      30.894545\n",
-       "Davidfurt        31.995882\n",
-       "Name: fare, dtype: float64"
-      ]
-     },
-     "execution_count": 35,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "suburban_avg_fare = suburban_cities_df.groupby([\"city\"]).mean()[\"fare\"]\n",
-    "suburban_avg_fare.head()"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 37,
-   "id": "65bef9af",
-   "metadata": {},
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "city\n",
-       "Bradshawfurt      40.064000\n",
-       "Garzaport         24.123333\n",
-       "Harringtonfort    33.470000\n",
-       "Jessicaport       36.013333\n",
-       "Lake Jamie        34.358333\n",
-       "Name: fare, dtype: float64"
-      ]
-     },
-     "execution_count": 37,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "rural_avg_fare = rural_cities_df.groupby([\"city\"]).mean()[\"fare\"]\n",
-    "rural_avg_fare.head()"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 23,
-   "id": "7e1e6259",
-   "metadata": {},
-   "outputs": []
-   "source": [
-    "# 5. Get the average fare per driver for each city type. "
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 25,
-   "id": "2074f20c",
-   "metadata": {},
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "0    13.83\n",
-       "1    30.24\n",
-       "2    33.44\n",
-       "3    23.44\n",
-       "4    34.58\n",
-       "Name: fare, dtype: float64"
-      ]
-     },
-     "execution_count": 25,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "urban_fares = urban_cities_df[\"fare\"]\n",
-    "urban_fares.head()"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 26,
-   "id": "eb17fec3",
-   "metadata": {},
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "1625    27.79\n",
-       "1626    18.75\n",
-       "1627    21.71\n",
-       "1628    17.10\n",
-       "1629    37.78\n",
-       "Name: fare, dtype: float64"
-      ]
-     },
-     "execution_count": 26,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "suburban_fares = suburban_cities_df[\"fare\"]\n",
-    "suburban_fares.head()"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 27,
-   "id": "fa15e54f",
-   "metadata": {},
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "2250    43.22\n",
-       "2251    12.42\n",
-       "2252    54.85\n",
-       "2253    47.90\n",
-       "2254    51.80\n",
-       "Name: fare, dtype: float64"
-      ]
-     },
-     "execution_count": 27,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "rural_fares = rural_cities_df[\"fare\"]\n",
-    "rural_fares.head()"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 28,
-   "id": "89b4ebcd",
-   "metadata": {},
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "The mean fare price for urban trips is $24.53.\n"
-     ]
-    }
-   ],
-   "source": [
-    "mean_urban_fares = np.mean(urban_fares)\n",
-    "print(f\"The mean fare price for urban trips is ${mean_urban_fares:.2f}.\")"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 29,
-   "id": "ac1d68f7",
-   "metadata": {},
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "The mean fare price for suburban trips is $30.97.\n"
-     ]
-    }
-   ],
-   "source": [
-    "mean_suburban_fares = np.mean(suburban_fares)\n",
-    "print(f\"The mean fare price for suburban trips is ${mean_suburban_fares:.2f}.\")"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 30,
-   "id": "abc19ad9",
-   "metadata": {},
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "The mean fare price for rural trips is $34.62.\n"
-     ]
-    }
-   ],
-   "source": [
-    "mean_rural_fares = np.mean(rural_fares)\n",
-    "print(f\"The mean fare price for rural trips is ${mean_rural_fares:.2f}.\")"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
->>>>>>> 030e1ccfb03093e8c5031e24105675386b468f90
    "id": "2642c321",
    "metadata": {},
    "outputs": []
@@ -782,7 +283,6 @@
   },
   {
    "cell_type": "code",
-<<<<<<< HEAD
    "execution_count": 137,
    "id": "14616c5e",
    "metadata": {},
@@ -1623,10 +1123,6 @@
    "cell_type": "code",
    "execution_count": null,
    "id": "1e2b2946",
-=======
-   "execution_count": null,
-   "id": "14616c5e",
->>>>>>> 030e1ccfb03093e8c5031e24105675386b468f90
    "metadata": {},
    "outputs": []
    "source": []
